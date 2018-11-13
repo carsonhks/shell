@@ -14,15 +14,11 @@ Plug 'junegunn/seoul256.vim'
 call plug#end()
 
 
-
 " Turn on syntax highlighting
 syntax on
 
 " For plugins to load correctly
 filetype plugin indent on
-
-" TODO: Pick a leader key
-" let mapleader = ","
 
 " Security
 set modelines=0
@@ -84,22 +80,11 @@ map <leader><space> :let @/=''<cr> " clear search
 
 " TODO: remap the process of gf for verilog modules as gfv
 
-" Remap help key.
-inoremap <F1> <ESC>:set invfullscreen<CR>a
-nnoremap <F1> :set invfullscreen<CR>
-vnoremap <F1> :set invfullscreen<CR>
-
-" Textmate holdouts
+" Copy/Paste always interface with system clipboard
+set clipboard=unnamedplus
 
 " Formatting
 map <leader>q gqip
-
-" Visualize tabs and newlines
-set listchars=tab:▸\ ,eol:¬
-" Uncomment this to enable by default:
-" set list " To enable by default
-" Or use your leader key + l to toggle on/off
-map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 " Color scheme (terminal)
 set t_Co=256
