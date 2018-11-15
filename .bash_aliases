@@ -9,4 +9,4 @@ alias lss="ls -lS"
 
 # Misc
 alias open="gnome-open"
-alias vim="vimx"
+#alias vim="vimx"
