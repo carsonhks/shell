@@ -6,12 +6,23 @@ filetype off
 
 
 " Load plugins here (pathogen or vundle)
+" TODO if running centos git 1.6.*, https for checking out git repos does not
+" work. Use SSH url paths to PlugInstall and PlugUpdate if on CentOS work
+" machine
 call plug#begin('~/.vim/plugged')
 
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'git@github.com:junegunn/vim-easy-align.git'
 
 call plug#end()
+
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 
 " Turn on syntax highlighting
