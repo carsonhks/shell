@@ -11,8 +11,8 @@ filetype off
 " machine
 call plug#begin('~/.vim/plugged')
 
-Plug 'JuliaEditorSupport/julia-vim'
-Plug 'junegunn/seoul256.vim'
+Plug 'git@github.com:JuliaEditorSupport/julia-vim.git'
+Plug 'git@github.com:junegunn/seoul256.vim.git'
 Plug 'git@github.com:junegunn/vim-easy-align.git'
 
 call plug#end()
