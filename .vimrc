@@ -6,7 +6,7 @@ filetype off
 
 
 " Load plugins here (pathogen or vundle)
-" TODO if running centos git 1.6.*, https for checking out git repos does not
+" if running centos git 1.6.*, https for checking out git repos does not
 " work. Use SSH url paths to PlugInstall and PlugUpdate if on CentOS work
 " machine
 call plug#begin('~/.vim/plugged')
@@ -59,12 +59,9 @@ set noshiftround
 " Cursor motion
 set scrolloff=3
 set backspace=indent,eol,start
-set matchpairs+=<:> " use % to jump between pairs
+" use % to jump between pairs
+set matchpairs+=<:> 
 runtime! macros/matchit.vim
-
-" Move up/down editor lines
-nnoremap j gj
-nnoremap k gk
 
 " Allow hidden buffers
 set hidden
@@ -80,14 +77,12 @@ set showmode
 set showcmd
 
 " Searching
-nnoremap / /\v
-vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 set showmatch
-map <leader><space> :let @/=''<cr> " clear search
+map <leader><space> :let @/=''<cr> 
 
 " TODO: remap the process of gf for verilog modules as gfv
 
