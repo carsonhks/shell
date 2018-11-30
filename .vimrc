@@ -55,6 +55,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set noshiftround
+set diffopt+=iwhite
 
 " Cursor motion
 set scrolloff=3
