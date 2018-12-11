@@ -7,6 +7,11 @@ alias lslt "ls -lt"
 alias cl "clear"
 alias lss "ls -lS"
 
+# Copy/Paste terminal output
+alias c "xclip -selection clipboard"
+alias v "xclip -o -selection clipboard"
+alias cdv "cd `v`"
+
 # Misc
 alias open "gnome-open"
 alias vim "vimx"
