@@ -15,3 +15,4 @@ alias cdv "cd `v`"
 # Misc
 alias open "gnome-open"
 alias vim "vimx"
+alias pyweb "python -m SimpleHTTPServer"
