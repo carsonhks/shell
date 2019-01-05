@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'git@github.com:JuliaEditorSupport/julia-vim.git'
 Plug 'git@github.com:junegunn/seoul256.vim.git'
 Plug 'git@github.com:junegunn/vim-easy-align.git'
+" Plug 'git@github.com:Valloric/YouCompleteMe.git'
 
 call plug#end()
 
