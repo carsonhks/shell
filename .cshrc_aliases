@@ -13,7 +13,7 @@ alias v "xclip -o -selection clipboard"
 alias cdv "cd `v`"
 
 # Misc
-alias open "gnome-open"
+alias open "xdg-open"
 alias vim "vimx"
 alias pyweb "python -m SimpleHTTPServer &"
 alias lhost "firefox --new-tab localhost:8000 &"
