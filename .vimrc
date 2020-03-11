@@ -91,6 +91,9 @@ map <leader><space> :let @/=''<cr>
 " Copy/Paste always interface with system clipboard
 set clipboard=unnamedplus
 
+" Add a shortcut to toggle nerdtree on and off
+map <C-n> :NERDTreeToggle<CR>
+
 " Formatting
 map <leader>q gqip
 
