@@ -18,13 +18,14 @@ Plug 'git@github.com:preservim/nerdtree.git'
 
 call plug#end()
 
+" change leader key to be ;
+let mapleader=';'
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-
 
 " Turn on syntax highlighting
 syntax on
@@ -40,9 +41,6 @@ set number
 
 " Show file stats
 set ruler
-
-" Blink cursor on error instead of beeping (grr)
-set visualbell
 
 " Encoding
 set encoding=utf-8
@@ -84,12 +82,19 @@ set incsearch
 set ignorecase
 set smartcase
 set showmatch
+" clears the search
 map <leader><space> :let @/=''<cr> 
 
-" TODO: remap the process of gf for verilog modules as gfv
 
 " Copy/Paste always interface with system clipboard
-set clipboard=unnamedplus
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
+
 
 " Add a shortcut to toggle nerdtree on and off
 map <C-n> :NERDTreeToggle<CR>
