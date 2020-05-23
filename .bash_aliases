@@ -15,5 +15,3 @@ alias tm="tmux"
 alias tarit="tar -cvzf"
 alias untar="tar -xvzf"
 
-# Misc
-alias open="gnome-open"
